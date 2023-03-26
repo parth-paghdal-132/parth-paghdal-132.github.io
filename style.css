@@ -1244,8 +1244,7 @@
   .contact-btn {
     display: -ms-flexbox;
     display: flex;
-    border: 2px solid var(--md-sys-color-primary-container);
-    background-color: var(--md-sys-color-primary-container);
+    border: 2px solid var(--md-sys-color-on-secondary-container);
     padding: 12px 15px;
     border-radius: 12px;
     -ms-flex-align: center;
@@ -1276,7 +1275,7 @@
     color: var(--md-sys-color-on-primary-container);
     font-weight: 500;
   }
-  .about-content li:hover,
+  
   .contact-btn:hover {
     background-color: var(--md-sys-color-on-primary-container);
     border: 2px solid var(--md-sys-color-on-primary);
@@ -1373,6 +1372,10 @@
   }
   .resume-box li + li {
     margin-top: 20px;
+  }
+
+  .honors {
+    list-style-type: none;
   }
   
   .skill-lt + .skill-lt {
@@ -1497,11 +1500,11 @@
   /* portfolio
   -------------------------------*/
   .portfolio-box {
-    border: 2px solid var(--md-sys-color-outline);
+    border: 1px solid var(--md-sys-color-on-primary-container);
     padding: 10px;
     border-radius: 10px;
     position: relative;
-    background-color: var(--md-sys-color-surface-light);
+    background-color: var(--md-sys-color-primary-container);
   }
   .portfolio-box .portfolio-img {
     overflow: hidden;
@@ -1512,8 +1515,8 @@
     bottom: 0px;
     left: 20px;
     right: 20px;
-    background-color: var(--md-sys-color-primary-container);
-    border: 2px solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-primary);
+    border: 1px solid var(--md-sys-color-primary-container);
     padding: 20px;
     border-radius: 10px;
     transition: ease all 0.35s;
@@ -1522,10 +1525,12 @@
   .portfolio-box .portfolio-text h6 {
     font-size: 17px;
     margin: 0 0 5px;
+    color: var(--md-sys-color-on-primary);
   }
   .portfolio-box .portfolio-text p {
     margin: 0;
     font-size: 13px;
+    color: var(--md-sys-color-on-primary);
   }
   .portfolio-box .portfolio-text .gallery-link {
     position: absolute;
@@ -1539,8 +1544,8 @@
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
-    background: var(--md-sys-color-tertiary-container);
-    color: var(--md-sys-color-on-tertiary-container);
+    background: var(--md-sys-color-on-primary);
+    color: var(--md-sys-color-primary);
     border-radius: 50%;
     line-height: 1;
   }
@@ -1557,8 +1562,8 @@
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
-    background: var(--md-sys-color-tertiary);
-    color: var(--md-sys-color-on-tertiary);
+    background: var(--md-sys-color-on-primary-container);
+    color: var(--md-sys-color-primary-container);
     border-radius: 50%;
     border: 2px solid var(--md-sys-color-primary-container);
   }
@@ -1730,7 +1735,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
-    background-color: var(--md-sys-color-primary-container);
+    background-color: var(--md-sys-color-secondary-container);
     position: relative;
   }
   @media (max-width: 1200px) {
@@ -1742,8 +1747,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: var(--md-sys-color-on-primary-container);
-    color: var(--md-sys-color-background);
+    background: var(--md-sys-color-on-secondary-container);
+    color: var(--md-sys-color-secondary-container);
     z-index: 1;
     opacity: 1;
   }
