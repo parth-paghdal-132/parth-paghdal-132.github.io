@@ -96,35 +96,10 @@
        * lightbox gallery
       /* ---------------------------------------------- */
     WEA.Gallery = function() {
-        if ($(".lightbox-gallery").exists() || $(".popup-youtube, .popup-vimeo, .popup-gmaps, .px_modal").exists()) {
+        if ($(".lightbox-gallery").exists() || $(".popup-youtube, .popup-vimeo, .popup-gmaps, .app_modal").exists()) {
             loadScript(plugin_track + 'magnific/jquery.magnific-popup.min.js', function() {
-                if ($(".lightbox-gallery").exists()) {
-                    $('.lightbox-gallery').magnificPopup({
-                        delegate: '.gallery-link',
-                        type: 'image',
-                        tLoading: 'Loading image #%curr%...',
-                        mainClass: 'mfp-fade',
-                        fixedContentPos: true,
-                        closeBtnInside: false,
-                        gallery: {
-                            enabled: true,
-                            navigateByImgClick: true,
-                            preload: [0, 1] // Will preload 0 - before current, and 1 after WEA current image
-                        }
-                    });
-                }
-                if ($(".popup-youtube, .popup-vimeo, .popup-gmaps").exists()) {
-                    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-                        disableOn: 700,
-                        type: 'iframe',
-                        mainClass: 'mfp-fade',
-                        removalDelay: 160,
-                        preloader: false,
-                        fixedContentPos: false
-                    });
-                }
-                if ($(".px_modal").exists()) {
-                    $('.px_modal').magnificPopup({
+                if ($(".app_modal").exists()) {
+                    $('.app_modal').magnificPopup({
                         type: 'inline',
                         midClick: true,
                         mainClass: 'mfp-fade'
