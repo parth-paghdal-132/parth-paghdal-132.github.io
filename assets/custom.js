@@ -177,7 +177,8 @@
                     loop: true,
                     strings: [
                         'Student',
-                        'Developer'
+                        'Developer',
+                        'Agile Developer'
                     ],
                     breakLines: false
                 });
