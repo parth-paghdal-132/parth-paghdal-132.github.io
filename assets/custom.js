@@ -176,9 +176,9 @@
                     speed: 200,
                     loop: true,
                     strings: [
-                        'Student',
-                        'Developer',
-                        'Agile Developer'
+                        'Graduate Student',
+                        'Agile Developer',
+                        'Team Player'
                     ],
                     breakLines: false
                 });
