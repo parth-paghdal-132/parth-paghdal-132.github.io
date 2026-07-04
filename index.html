@@ -1,32 +1,17 @@
 <html>
-    <head>
-        <title>Parth Paghdal Tech Portfolio</title>
-        <link href="./style.css" rel="stylesheet">
-         <!-- Default Icon -->
-        <link rel="icon" href="./assets/icon-light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
-        <!-- Dark Mode Icon -->
-        <link rel="icon" href="./assets/icon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
-    </head>
-    <body>
-        <header class="main-header d-lg-none">
-            <div class="container">
-                <!-- Brand -->
-                <div class="logo">
-                    <a class="navbar-brand" href="#">
-                        <img class="logo-dark" title="" alt="" src="assets/logo.svg">
-                        <img class="logo-light" title="" alt="" src="assets/logo-light.svg">
-                    </a>
-                </div>
-                <div class="ms-auto">
-                    <button class="toggler-menu">
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </header>
 
+<head>
+    <title>Parth Paghdal Tech Portfolio</title>
+    <link href="./style.css" rel="stylesheet">
+    <!-- Default Icon -->
+    <link rel="icon" href="./assets/icon-light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
+    <!-- Dark Mode Icon -->
+    <link rel="icon" href="./assets/icon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+</head>
 
-        <div class="header-left-fixed one-page-nav">
+<body>
+    <header class="main-header d-lg-none">
+        <div class="container">
             <!-- Brand -->
             <div class="logo">
                 <a class="navbar-brand" href="#">
@@ -34,775 +19,935 @@
                     <img class="logo-light" title="" alt="" src="assets/logo-light.svg">
                 </a>
             </div>
-            <!-- / -->
-            <ul class="main-menu">
+            <div class="ms-auto">
+                <button class="toggler-menu">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="header-left-fixed one-page-nav">
+        <!-- Brand -->
+        <div class="logo">
+            <a class="navbar-brand" href="#">
+                <img class="logo-dark" title="" alt="" src="assets/logo.svg">
+                <img class="logo-light" title="" alt="" src="assets/logo-light.svg">
+            </a>
+        </div>
+        <!-- / -->
+        <ul class="main-menu">
+            <li>
+                <a data-scroll-nav="0" href="#home">
+                    <span class="m-icon">
+                        <i class="bi bi-house-door"></i>
+                    </span>
+                    <span class="m-text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll-nav="1" href="#about">
+                    <span class="m-icon">
+                        <i class="bi-person"></i>
+                    </span>
+                    <span class="m-text">About</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll-nav="2" href="#services">
+                    <span class="m-icon">
+                        <i class="bi-briefcase"></i>
+                    </span>
+                    <span class="m-text">Expertise</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll-nav="3" href="#portfolio">
+                    <span class="m-icon">
+                        <i class="bi-columns"></i>
+                    </span>
+                    <span class="m-text">Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll-nav="4" href="#certifications">
+                    <span class="m-icon">
+                        <i class="bi-patch-check"></i>
+                    </span>
+                    <span class="m-text">Certification</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll-nav="5" href="#contactus">
+                    <span class="m-icon">
+                        <i class="bi-telephone"></i>
+                    </span>
+                    <span class="m-text">Connect</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Top Menu -->
+        <div class="theme-btn dropdown">
+            <button class="btn dropdown-toggle" id="bd-theme" type="button" aria-expanded="false"
+                data-bs-toggle="dropdown">
+                <span class="bi my-1 theme-icon-active">
+                    <i class="bi-circle-half"></i>
+                </span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme"
+                style="--bs-dropdown-min-width: 8rem;">
                 <li>
-                    <a data-scroll-nav="0" href="#home">
-                        <span class="m-icon">
-                            <i class="bi bi-house-door"></i>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+                        <span class="bi me-2 opacity-50 theme-icon">
+                            <i class="bi-sun-fill"></i>
                         </span>
-                        <span class="m-text">Home</span>
-                    </a>
+                        Light
+                        <span class="bi ms-auto d-none">
+                            <i class="bi-check2"></i>
+                        </span>
+                    </button>
                 </li>
                 <li>
-                    <a data-scroll-nav="1" href="#about">
-                        <span class="m-icon">
-                            <i class="bi-person"></i>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                        <span class="bi me-2 opacity-50 theme-icon">
+                            <i class="bi-moon-stars-fill"></i>
                         </span>
-                        <span class="m-text">About</span>
-                    </a>
+                        Dark
+                        <span class="bi ms-auto d-none">
+                            <i class="bi-check2"></i>
+                        </span>
+                    </button>
                 </li>
                 <li>
-                    <a data-scroll-nav="2" href="#services">
-                        <span class="m-icon">
-                            <i class="bi-briefcase"></i>
+                    <button type="button" class="dropdown-item d-flex align-items-center active"
+                        data-bs-theme-value="auto">
+                        <span class="bi me-2 opacity-50 theme-icon">
+                            <i class="bi-circle-half"></i>
                         </span>
-                        <span class="m-text">Experties</span>
-                    </a>
-                </li>
-                <li>
-                    <a data-scroll-nav="3" href="#portfolio">
-                        <span class="m-icon">
-                            <i class="bi-columns"></i>
+                        Auto
+                        <span class="bi ms-auto d-none">
+                            <i class="bi-check2"></i>
                         </span>
-                        <span class="m-text">Portfolio</span>
-                    </a>
-                </li>
-                <li>
-                    <a data-scroll-nav="4" href="#certifications">
-                        <span class="m-icon">
-                            <i class="bi-patch-check"></i>
-                        </span>
-                        <span class="m-text">Certification</span>
-                    </a>
-                </li>
-                <li>
-                    <a data-scroll-nav="5" href="#contactus">
-                        <span class="m-icon">
-                            <i class="bi-telephone"></i>
-                        </span>
-                        <span class="m-text">Connect</span>
-                    </a>
+                    </button>
                 </li>
             </ul>
-            <!-- Top Menu -->
-            <div class="theme-btn dropdown">
-                <button class="btn dropdown-toggle" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" >
-                    <span class="bi my-1 theme-icon-active">
-                        <i class="bi-circle-half"></i>
-                    </span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme" style="--bs-dropdown-min-width: 8rem;">
-                    <li>
-                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
-                            <span class="bi me-2 opacity-50 theme-icon">
-                                <i class="bi-sun-fill"></i>
-                            </span>
-                            Light
-                            <span class="bi ms-auto d-none">
-                                <i class="bi-check2"></i>
-                            </span>
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
-                            <span class="bi me-2 opacity-50 theme-icon">
-                                <i class="bi-moon-stars-fill"></i>
-                            </span>
-                            Dark
-                            <span class="bi ms-auto d-none">
-                                <i class="bi-check2"></i>
-                            </span>
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
-                            <span class="bi me-2 opacity-50 theme-icon">
-                                <i class="bi-circle-half"></i>
-                            </span>
-                            Auto
-                            <span class="bi ms-auto d-none">
-                                <i class="bi-check2"></i>
-                            </span>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <!-- / -->
         </div>
+        <!-- / -->
+    </div>
 
-        <main class="wrapper">
-            <!-- Home -->
-            <section id="home" data-scroll-index="0" class="home-section">
-                <div class="container">
-                    <div class="row align-items-center min-vh-100 flex-row-reverse">
-                        <div class="col-lg-6 ps-xl-5 mb-5 mb-lg-0">
-                            <div class="home-intro">
-                                <h6>👋 Hi, I’ m</h6>
-                                <h1>Parth Paghdal</h1>
-                                <h2>I'm a <span id="type-it"></span></h2>
-                                <p class="pe-lg-5">I find inspiration in creative endeavors, collaboration with others, and seeing the tangible results of my work in terms of the company's success. Besides this, I am motivated by the satisfaction of overcoming challenges.</p>
-                                <div class="btn-bar">
-                                    <a class="px-btn px-btn-theme" href="./assets/Stevens-Grad-Parth.pdf" download target="_blank">Download Resume <i class="bi-download"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="home-image text-center">
-                                <div class="hi-icon-top">
-                                    <svg width="123" height="123" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M44.4879 2.72729C18.0681 -8.74866 -8.74539 18.0655 2.73027 44.486L4.62443 48.8556C6.3577 52.8463 7.2521 57.1507 7.2521 61.5015C7.2521 65.8524 6.3577 70.1568 4.62443 74.1475L2.7272 78.5141C-8.74847 104.935 18.065 131.749 44.491 120.273L48.8574 118.375C52.848 116.642 57.1523 115.748 61.5031 115.748C65.8538 115.748 70.1581 116.642 74.1488 118.375L78.5152 120.273C104.932 131.749 131.748 104.935 120.273 78.511L118.376 74.1445C116.642 70.1537 115.748 65.8493 115.748 61.4985C115.748 57.1476 116.642 52.8432 118.376 48.8525L120.273 44.486C131.748 18.0655 104.935 -8.74866 78.5121 2.72729L74.1457 4.62457C70.1551 6.35788 65.8508 7.25231 61.5 7.25231C57.1492 7.25231 52.8449 6.35788 48.8543 4.62457L44.4879 2.72729Z" fill="var(--md-sys-color-primary-container)" />
-                                    </svg>
-                                </div>
-                                <div class="hi-icon-bottom">
-                                    <svg width="123" height="123" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M44.4879 2.72729C18.0681 -8.74866 -8.74539 18.0655 2.73027 44.486L4.62443 48.8556C6.3577 52.8463 7.2521 57.1507 7.2521 61.5015C7.2521 65.8524 6.3577 70.1568 4.62443 74.1475L2.7272 78.5141C-8.74847 104.935 18.065 131.749 44.491 120.273L48.8574 118.375C52.848 116.642 57.1523 115.748 61.5031 115.748C65.8538 115.748 70.1581 116.642 74.1488 118.375L78.5152 120.273C104.932 131.749 131.748 104.935 120.273 78.511L118.376 74.1445C116.642 70.1537 115.748 65.8493 115.748 61.4985C115.748 57.1476 116.642 52.8432 118.376 48.8525L120.273 44.486C131.748 18.0655 104.935 -8.74866 78.5121 2.72729L74.1457 4.62457C70.1551 6.35788 65.8508 7.25231 61.5 7.25231C57.1492 7.25231 52.8449 6.35788 48.8543 4.62457L44.4879 2.72729Z" fill="var(--md-sys-color-primary-container)" />
-                                    </svg>
-                                </div>
-                                <img src="assets/IMG_6223(1).JPG" title="" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End Home -->
-            <!-- About -->
-            <section id="about" data-scroll-index="1" class="section about-section">
-                <div class="container">
-                    <div class="about-me">
-                        <div class="row align-items-start">
-                            <div class="col-lg-5 pb-4 pb-lg-0">
-                                <div class="title-01">
-                                    <span>About Me</span>
-                                </div>
-                                <div class="about-me-text pb-5">
-                                    <h3>My Name Is Parth Paghdal</h3>
-                                    <h5>I am serving Android Developer position at Eulerity.</h5>
-                                    <p> I am an experienced mobile app developer, who has experience of managing all aspects of mobile app development from designing to deployment apps. I spent 3 years developing and sharpening my skills as a Mobile app developer. </p>
-                                    <div class="row pt-2">
-                                        <div class="col-auto">
-                                            <div class="a-count">
-                                                <span class="count">10+</span>
-                                                <div class="a-count-text">Projects <br>Completed.</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="title-01 mt-5">
-                                    <span>Work</span>
-                                </div>
-                                <div class="resume-box">
-                                    <ul>
-                                        <li>
-                                            <div class="icon">
-                                                <i class="bi bi-phone-fill"></i>
-                                            </div>
-                                            <span class="time">Jan 2024 - Present</span>
-                                            <h5>Android Developer</h5>
-                                            <h6>Eulerity, New York City, NY</h6>
-                                            <p>During a brief leadership absence, I led the Android team, managing Play Store updates, ensuring code quality, optimizing performance, and supporting project delivery. The success of this period led me to continue contributing in a leadership capacity, helping drive technical direction, maintain engineering standards, and assist teammates in resolving complex issues.</p>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <i class="bi bi-phone-fill"></i>
-                                            </div>
-                                            <span class="time">June 2023 - Dec 2023</span>
-                                            <h5>Android Mobile Intern</h5>
-                                            <h6>Eulerity, New York City, NY</h6>
-                                            <p>Unite with team members to grasp challenges, tackle them head-on, and deliver impactful solutions from inception to implementation.</p>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <i class="bi bi-building"></i>
-                                            </div>
-                                            <span class="time">Feb 2023 - May 2023</span>
-                                            <h5>Graduate Course Assistant</h5>
-                                            <h6>Stevens Institute of Technology, Hoboken NJ</h6>
-                                            <p>As a Course Assistant for the graduate-level course Mobile Systems and Applications at Stevens, I play an integral role in ensuring the smooth operation of the class. I collaborate closely with the professor to make arrangements for the course and provide technical guidance to students to enhance their understanding of course material.</p>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <i class="bi bi-phone-fill"></i>
-                                            </div>
-                                            <span class="time">2019 - 2021</span>
-                                            <h5>Mobile App Developer</h5>
-                                            <h6>Creative infoway, Ahmedabad</h6>
-                                            <p>Continually improved efficiency of projects and tasks. Work eagerly to ensure that the process of developing android apps is streamlined and all the potential errors and risk anticipated earlier. Cooperated with all the engineers of app development. Worked with production team of Display Social (formerly called Tsu: Social that pays). Where implemented new features and solved bugs identified by the tester.</p>
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-7 sticky-lg-top ps-xl-5">
-                                <div class="row align-items-start">
-                                    <div class="col-md-12">
-                                        <div class="title-01">
-                                            <span>Education</span>
-                                        </div>
-                                        <div class="resume-box">
-                                            <ul>
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="bi bi-building"></i>
-                                                    </div>
-                                                    <span class="time">2022 - 2024</span>
-                                                    <h5>Stevens Institute of Technology</h5>
-                                                    <p class="location"><i class="bi bi-geo-alt-fill"></i>&nbsp;Hoboken NJ.</p>
-                                                    <p><strong>GPA: 3.7/4</strong></p>
-                                                    <a class="education-info app_modal portfolio-modal-link" href="#education_1">
-                                                        <i class="bi bi-info-lg"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="bi bi-building"></i>
-                                                    </div>
-                                                    <span class="time">2016 - 2019</span>
-                                                    <h5>Shree Manibhai Virani &amp; Smt. Navalben Virani Science College</h5>
-                                                    <p class="location"><i class="bi bi-geo-alt-fill"></i>&nbsp;Rajkot, India</p>
-                                                    <p><strong>GPA: 3.9/4</strong></p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 py-4">
-                                        <div class="title-01">
-                                            <span>Skills</span>
-                                        </div>
-                                        <div class="chip-group">
-                                            <span class="chip">Android Development (Kotlin, Jetpack Compose)</span>
-                                            <span class="chip">iOS Development (Swift, SwiftUI, Storyboard)</span>
-                                            <span class="chip">Efficiency in Task Prioritization and Time Management</span>
-                                            <span class="chip">Leadership and Stakeholder Management</span>
-                                            <span class="chip">Critical Thinking and Problem-Solving</span>
-                                            <span class="chip">Presentation and Communication Skills</span>
-                                            <span class="chip">Continuous Learning and Adaptability</span>
-                                            <span class="chip">Debugging and Troubleshooting</span>
-                                            <span class="chip">Multithreading and Reactive Programming</span>
-                                            <span class="chip">JavaScript and React Development</span>
-                                            <span class="chip">Backend Development (Ktor, Node.js, Express)</span>
-                                            <span class="chip">Database Management (MySQL, MongoDB, Redis)</span>
-                                            <span class="chip">Agile Methodology (Scrum, Sprint)</span>
-                                            <span class="chip">GraphQL and Web Sockets</span>
-                                            <span class="chip">Version Control (GitHub, Bitbucket)</span>
-                                            <span class="chip">API Testing and Integration (Postman)</span>
-                                            <span class="chip">Collaboration Tools (Slack, JIRA)</span>
-                                            <span class="chip">Software Design (Lean Architecture, Refactoring)</span>
-                                            <span class="chip">UI/UX Design Tools (Figma, Storyboard)</span>
-                                            <span class="chip">Programming Languages (Java, Python, C/C++)</span>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row g-3 mt-lg-3">
-                            <div class="col-md-3 about-content">
-                                <div class="contact-btn">
-                                    <div class="a-icon">
-                                        <i class="bi bi-envelope-fill"></i>
-                                    </div>
-                                    <div class="a-text">
-                                        <a class="text-reset stretched-link" href="mailto: partpaghadal123@gamil.com" target="_blank">Email Me</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 about-content">
-                                <div class="contact-btn">
-                                    <div class="a-icon">
-                                        <i class="bi bi-linkedin"></i>
-                                    </div>
-                                    <div class="a-text">
-                                        <a class="text-reset stretched-link" href="https://www.linkedin.com/in/parth-paghadal-608b83134/" target="_blank">Connect With Me</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 about-content">
-                                <div class="contact-btn">
-                                    <div class="a-icon">
-                                        <i class="bi bi-skype"></i>
-                                    </div>
-                                    <div class="a-text">
-                                        <a class="text-reset stretched-link" href="https://join.skype.com/invite/Xy7F3s9lVhpU" target="_blank">Skype Me</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 about-content">
-                                <div class="contact-btn">
-                                    <div class="a-icon">
-                                        <i class="bi bi-person-fill"></i>
-                                    </div>
-                                    <div class="a-text">
-                                        <a class="text-reset stretched-link" href="./assets/Stevens-Grad-Parth.pdf" download target="_blank">Resume</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End About -->
-            <!-- Services -->
-            <section id="services" data-scroll-index="2" class="section services-section">
-                <div class="container">
-                    <div class="section-heading">
-                        <h3>
-                            <span>MY EXPERTIES</span>
-                        </h3>
-                    </div>
-                    <div class="row gy-4">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="feature-box-01">
-                                <div class="icon"><i class="bi bi-phone"></i></div>
-                                <div class="feature-content">
-                                    <h5>Mobile App Development</h5>
-                                    <p>As a skilled mobile app developer, I possess expertise in Android, Kotlin, and Java, coupled with proficiency in multithreading and time management, resulting in the delivery of high-quality apps.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="feature-box-01">
-                                <div class="icon"><i class="bi bi-globe"></i></div>
-                                <div class="feature-content">
-                                    <h5>Web App Development</h5>
-                                    <p>With expertise in a wide range of technologies such as React, Node.js, GraphQL, and MySQL, I am a skilled web developer with a strong attention to detail and a dedication to continuous learning.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="feature-box-01">
-                                <div class="icon"><i class="bi bi-laptop"></i></div>
-                                <div class="feature-content">
-                                    <h5>Desktop App Development</h5>
-                                    <p>With expertise in C/C++, Java, and VB.net, I excel in desktop app development. Additionally, my experience with multithreading and debugging enables me to deliver reliable and efficient applications.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End Services -->
-            <!-- portfolio -->
-            <section id="portfolio" data-scroll-index="3" class="section portfolio-section">
-                <div class="container">
-                    <div class="section-heading">
-                        <h3>
-                            <span>My Portfolio</span>
-                        </h3>
-                    </div>
-                    <div class="lightbox-gallery">
-                        <div class="row g-3 g-lg-4 portfolio-content">
-                            <div class="col-sm-6 col-lg-4 grid-item">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-text">
-                                        <h6>LocalBuds: Service Finding</h6>
-                                        <p>Web application</p>
-                                        <a class="gallery-link" data-bs-target="#project_1_image" role="button" data-bs-toggle="modal">
-                                            <i class="bi-arrow-up-right-circle"></i>
-                                        </a>
-                                    </div>
-                                    <div class="portfolio-img">
-                                        <img src="assets/localbuds/icon_transparent.png" title="" alt="">
-                                        <a class="app_modal portfolio-modal-link" href="#project_1">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 grid-item">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-text">
-                                        <h6>Pig Master</h6>
-                                        <p>Mobile App</p>
-                                        <a class="gallery-link" data-bs-target="#project_2_image" role="button" data-bs-toggle="modal">
-                                            <i class="bi-arrow-up-right-circle"></i>
-                                        </a>
-                                    </div>
-                                    <div class="portfolio-img">
-                                        <img src="assets/pigmaster/logo.png" title="" alt="">
-                                        <a class="app_modal portfolio-modal-link" href="#project_2">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End portfolio -->
-            <section id="certifications" data-scroll-index="4" class="section portfolio-section">
-                <div class="container">
-                    <div class="section-heading">
-                        <h3>
-                            <span>Certifications</span>
-                        </h3>
-                    </div>
-                    <div class="lightbox-gallery">
-                        <div class="row g-3 g-lg-4 portfolio-content">
-                            <div class="col-sm-6 col-lg-4 grid-item">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-text">
-                                        <h6>Google Play Academy</h6>
-                                        <p>Store listing certificate</p>
-                                        <a class="gallery-link" href="https://www.credential.net/415c9f11-902a-4cc4-a6d1-f984c05bda8f" target="_blank" role="button">
-                                            <i class="bi-arrow-up-right-circle"></i>
-                                        </a>
-                                    </div>
-                                    <div class="portfolio-img">
-                                        <img src="assets/certificates/listing_badge.png" title="" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 grid-item">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-text">
-                                        <h6>Udemy</h6>
-                                        <p>iOS & Swift - The Complete iOS App Development Bootcamp</p>
-                                        <a class="gallery-link" href="https://www.udemy.com/certificate/UC-db1dd78b-5f21-4f97-9f33-4eb3011ccdb8/" target="_blank" role="button">
-                                            <i class="bi-arrow-up-right-circle"></i>
-                                        </a>
-                                    </div>
-                                    <div class="portfolio-img">
-                                        <img src="assets/certificates/udemy_ios_course_badge.png" title="" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <div id="project_1" class="px-modal mfp-hide">
-            <div class="single-project-box">
-                <div class="row align-items-start">
-                    <div class="col-lg-7">
-                        <div class="row g-2">
-                            <div class="col-12">
-                                <img class="border" src="assets/localbuds/home.png" title="Home screen" alt="home screen" width="100%">
-                            </div>
-                            <div class="col-12">
-                                <img class="border" src="assets/localbuds/my_profile.png" title="Home screen" alt="home screen" width="100%">
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-5 pt-4 pt-lg-0">
-                        <h4>Academic project for graduate level course</h4>
-                        <p class="mb-3">LocalBuds: Service finding provides a platform to every individual who can do a certain service and would like to share it with other people or just someone who is seeking help to do local work like, Heating and Cooling Service, lawn cutting and many more.​</p>
-                        <p>With the help of Localbuds, one should not have to search multiple sources or visit multiple websites to find a provider. We will provide a one stop shop for freelance hiring.</p>
-                        <div class="about-content">
-                            <ul>
-                                <li class="d-flex">
-                                    <span class="col-4 col-lg-3">Type:</span>
-                                    <span>Web Application</span>
-                                </li>
-                                <li class="d-flex">
-                                    <span class="col-4 col-lg-3">Langages:</span>
-                                    <span>JS, Node.JS, AJAX, JQuery</span>
-                                </li>
-                                <li class="d-flex">
-                                    <span class="col-4 col-lg-3">Database:</span>
-                                    <span>MongoDB</span>
-                                </li>
-                                <li class="d-flex">
-                                    <span class="col-4 col-lg-3">Libraries</span>
-                                    <span>Express, Handlbars, Bootstrap, Express-session, Bcrypt</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="project_2" class="px-modal mfp-hide">
-            <div class="single-project-box">
-                <div class="row align-items-start">
-                    <div class="col-lg-7">
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <img class="border" src="assets/pigmaster/home.png" title="" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="border" src="assets/pigmaster/events.png" title="" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 pt-4 pt-lg-0">
-                        <h4>Mobile app for self earning</h4>
-                        <p class="mb-3">Looking for an easy way to get free coins and spins for the popular game "Coin Master"? Look no further than Pig Master! Our app provides free coins and spins, as well as a platform for users to connect with others who play the game. Whether you're in need of more coins or looking for help with a particularly challenging level, our community of Coin Master players is here to help.</p>
-                        <p>Plus, our app includes features like chat rooms where users can discuss strategies, and reports for inappropriate content in posts and messages. And while logging in is optional, doing so unlocks even more features, like the ability to upload posts, like and comment on other users' posts, and chat with other players.</p>
-                        <div class="about-content">
-                            <ul>
-                                <li class="d-flex">
-                                    <span class="col-4 col-lg-3">Type:</span>
-                                    <span>Mobile App</span>
-                                </li>
-                                <li class="d-flex">
-                                    <span class="col-4 col-lg-3">Langages:</span>
-                                    <span>Kotlin</span>
-                                </li>
-                                <li class="d-flex">
-                                    <span class="col-4 col-lg-3">Platform:</span>
-                                    <span>Android</span>
-                                </li>
-                                <li class="d-flex">
-                                    <span class="col-4 col-lg-3">Backend:</span>
-                                    <span>PHP, MySQL</span>
-                                </li>
-                                <li class="d-flex">
-                                    <span class="col-4 col-lg-3">Libraries:</span>
-                                    <span>Coroutines, Work manager, Retrofit, Material Design, Firebase auth, Audience Network ads, Unity ads</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="footer" id="contactus" data-scroll-index="5">
+    <main class="wrapper">
+        <!-- Home -->
+        <section id="home" data-scroll-index="0" class="home-section">
             <div class="container">
-                <div class="footer-info">
-                    <div class="footer-avatar">
-                        <img src="assets/cropped.JPG" title="" alt="">
-                    </div>
-                    <h6>Part Paghdal</h6>
-                </div>
-                <ul class="nav social-link">
-                    <li>
-                        <a href="tel:+1 609-934-6514" target="_blank"><i class="bi bi-phone-fill"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/parth-paghadal-608b83134/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="mailto:parthpaghadal123@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
-                    </li>
-                </ul>
-                <p class="copyright">Made by Parth B. Paghdal</p>
-            </div>
-        </footer>
-        
-
-        <div id="project_1_image" class="modal fade" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div id="project1Dark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                              <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                              <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                              <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                              <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                              <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <div class="row align-items-center min-vh-100 flex-row-reverse">
+                    <div class="col-lg-6 ps-xl-5 mb-5 mb-lg-0">
+                        <div class="home-intro">
+                            <h6>👋 Hi, I’ m</h6>
+                            <h1>Parth Paghdal</h1>
+                            <h2>I'm a <span id="type-it"></span></h2>
+                            <p class="pe-lg-5">I'm an Android Developer with 5+ years of experience building native and
+                                cross-platform mobile apps using Kotlin, Jetpack Compose, and Kotlin Multiplatform. I
+                                enjoy solving complex technical problems and turning ideas into polished apps that real
+                                people rely on every day.</p>
+                            <div class="btn-bar">
+                                <a class="px-btn px-btn-theme" href="./assets/Stevens-Grad-Parth.pdf" download
+                                    target="_blank">Download Resume <i class="bi-download"></i> </a>
                             </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="home-image text-center">
+                            <div class="hi-icon-top">
+                                <svg width="123" height="123" viewBox="0 0 123 123" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M44.4879 2.72729C18.0681 -8.74866 -8.74539 18.0655 2.73027 44.486L4.62443 48.8556C6.3577 52.8463 7.2521 57.1507 7.2521 61.5015C7.2521 65.8524 6.3577 70.1568 4.62443 74.1475L2.7272 78.5141C-8.74847 104.935 18.065 131.749 44.491 120.273L48.8574 118.375C52.848 116.642 57.1523 115.748 61.5031 115.748C65.8538 115.748 70.1581 116.642 74.1488 118.375L78.5152 120.273C104.932 131.749 131.748 104.935 120.273 78.511L118.376 74.1445C116.642 70.1537 115.748 65.8493 115.748 61.4985C115.748 57.1476 116.642 52.8432 118.376 48.8525L120.273 44.486C131.748 18.0655 104.935 -8.74866 78.5121 2.72729L74.1457 4.62457C70.1551 6.35788 65.8508 7.25231 61.5 7.25231C57.1492 7.25231 52.8449 6.35788 48.8543 4.62457L44.4879 2.72729Z"
+                                        fill="var(--md-sys-color-primary-container)" />
+                                </svg>
+                            </div>
+                            <div class="hi-icon-bottom">
+                                <svg width="123" height="123" viewBox="0 0 123 123" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M44.4879 2.72729C18.0681 -8.74866 -8.74539 18.0655 2.73027 44.486L4.62443 48.8556C6.3577 52.8463 7.2521 57.1507 7.2521 61.5015C7.2521 65.8524 6.3577 70.1568 4.62443 74.1475L2.7272 78.5141C-8.74847 104.935 18.065 131.749 44.491 120.273L48.8574 118.375C52.848 116.642 57.1523 115.748 61.5031 115.748C65.8538 115.748 70.1581 116.642 74.1488 118.375L78.5152 120.273C104.932 131.749 131.748 104.935 120.273 78.511L118.376 74.1445C116.642 70.1537 115.748 65.8493 115.748 61.4985C115.748 57.1476 116.642 52.8432 118.376 48.8525L120.273 44.486C131.748 18.0655 104.935 -8.74866 78.5121 2.72729L74.1457 4.62457C70.1551 6.35788 65.8508 7.25231 61.5 7.25231C57.1492 7.25231 52.8449 6.35788 48.8543 4.62457L44.4879 2.72729Z"
+                                        fill="var(--md-sys-color-primary-container)" />
+                                </svg>
+                            </div>
+                            <img src="assets/IMG_6223(1).JPG" title="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Home -->
+        <!-- About -->
+        <section id="about" data-scroll-index="1" class="section about-section">
+            <div class="container">
+                <div class="about-me">
+                    <div class="row align-items-start">
+                        <div class="col-lg-5 pb-4 pb-lg-0">
+                            <div class="title-01">
+                                <span>About Me</span>
+                            </div>
+                            <div class="about-me-text pb-5">
+                                <h3>My Name Is Parth Paghdal</h3>
+                                <h5>I am serving Android Developer position at Eulerity.</h5>
+                                <p> I am an experienced mobile app developer, who has experience of managing all aspects
+                                    of mobile app development from designing to deployment apps. I spent 5 years
+                                    developing and sharpening my skills as a Mobile app developer. </p>
+                            </div>
+                            <hr>
+                            <div class="title-01 mt-5">
+                                <span>Work</span>
+                            </div>
+                            <div class="resume-box">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="bi bi-phone-fill"></i>
+                                        </div>
+                                        <span class="time">Jan 2024 - Present</span>
+                                        <h5>Android Developer</h5>
+                                        <h6>Eulerity, New York City, NY</h6>
+                                        <p>During a brief leadership absence, I led the Android team, managing Play
+                                            Store updates, ensuring code quality, optimizing performance, and supporting
+                                            project delivery. The success of this period led me to continue contributing
+                                            in a leadership capacity, helping drive technical direction, maintain
+                                            engineering standards, and assist teammates in resolving complex issues.</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="bi bi-phone-fill"></i>
+                                        </div>
+                                        <span class="time">June 2023 - Dec 2023</span>
+                                        <h5>Android Mobile Intern</h5>
+                                        <h6>Eulerity, New York City, NY</h6>
+                                        <p>Unite with team members to grasp challenges, tackle them head-on, and deliver
+                                            impactful solutions from inception to implementation.</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="bi bi-building"></i>
+                                        </div>
+                                        <span class="time">Feb 2023 - May 2023</span>
+                                        <h5>Graduate Course Assistant</h5>
+                                        <h6>Stevens Institute of Technology, Hoboken NJ</h6>
+                                        <p>As a Course Assistant for the graduate-level course Mobile Systems and
+                                            Applications at Stevens, I play an integral role in ensuring the smooth
+                                            operation of the class. I collaborate closely with the professor to make
+                                            arrangements for the course and provide technical guidance to students to
+                                            enhance their understanding of course material.</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="bi bi-phone-fill"></i>
+                                        </div>
+                                        <span class="time">June 2019 - Mar 2021</span>
+                                        <h5>Android App Developer</h5>
+                                        <h6>Creative infoway, Ahmedabad</h6>
+                                        <p>Developed and maintained Android applications in Kotlin for client projects, collaborating with engineering teams to implement features and resolve bugs.</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 sticky-lg-top ps-xl-5">
+                            <div class="row align-items-start">
+                                <div class="col-md-12">
+                                    <div class="title-01">
+                                        <span>Education</span>
+                                    </div>
+                                    <div class="resume-box">
+                                        <ul>
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="bi bi-building"></i>
+                                                </div>
+                                                <span class="time">2022 - 2024</span>
+                                                <h5>Stevens Institute of Technology</h5>
+                                                <p class="location"><i class="bi bi-geo-alt-fill"></i>&nbsp;Hoboken NJ.
+                                                </p>
+                                                <p><strong>GPA: 3.7/4</strong></p>
+                                                <a class="education-info app_modal portfolio-modal-link"
+                                                    href="#education_1">
+                                                    <i class="bi bi-info-lg"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="bi bi-building"></i>
+                                                </div>
+                                                <span class="time">2016 - 2019</span>
+                                                <h5>Shree Manibhai Virani &amp; Smt. Navalben Virani Science College
+                                                </h5>
+                                                <p class="location"><i class="bi bi-geo-alt-fill"></i>&nbsp;Rajkot,
+                                                    India</p>
+                                                <p><strong>GPA: 3.9/4</strong></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 py-4">
+                                    <div class="title-01">
+                                        <span>Skills</span>
+                                    </div>
+                                    <div class="chip-group">
+                                        <span class="chip">Android Development (Kotlin, Jetpack Compose, MVVM)</span>
+                                        <span class="chip">Kotlin Multiplatform (KMP)</span>
+                                        <span class="chip">iOS Development (Swift, SwiftUI)</span>
+                                        <span class="chip">Multithreading &amp; Reactive Programming (Coroutines,
+                                            Flow)</span>
+                                        <span class="chip">Debugging and Troubleshooting</span>
+                                        <span class="chip">Software Design (Lean Architecture, Refactoring)</span>
+                                        <span class="chip">Database Management (MySQL, MongoDB, Redis, Room)</span>
+                                        <span class="chip">API Testing and Integration (Postman)</span>
+                                        <span class="chip">Version Control (GitHub, Bitbucket)</span>
+                                        <span class="chip">Backend Development (Ktor, Node.js, Express)</span>
+                                        <span class="chip">Leadership and Cross-Functional Collaboration</span>
+                                        <span class="chip">Agile Methodology (Scrum, Sprint)</span>
+                                        <span class="chip">Collaboration Tools (Slack, JIRA)</span>
+                                        <span class="chip">UI/UX Design Tools (Figma)</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3 mt-lg-3">
+                        <div class="col-md-3 about-content">
+                            <div class="contact-btn">
+                                <div class="a-icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div class="a-text">
+                                    <a class="text-reset stretched-link" href="mailto:parthpaghadal123@gmail.com"
+                                        target="_blank">Email Me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 about-content">
+                            <div class="contact-btn">
+                                <div class="a-icon">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="a-text">
+                                    <a class="text-reset stretched-link"
+                                        href="https://www.linkedin.com/in/parth-paghdal-608b83134"
+                                        target="_blank">Connect With Me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 about-content">
+                            <div class="contact-btn">
+                                <div class="a-icon">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                                <div class="a-text">
+                                    <a class="text-reset stretched-link" href="https://github.com/parth-paghadal"
+                                        target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 about-content">
+                            <div class="contact-btn">
+                                <div class="a-icon">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <div class="a-text">
+                                    <a class="text-reset stretched-link" href="./assets/Stevens-Grad-Parth.pdf" download
+                                        target="_blank">Resume</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+        <!-- Services -->
+        <section id="services" data-scroll-index="2" class="section services-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h3>
+                        <span>MY EXPERTISE</span>
+                    </h3>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="feature-box-01">
+                            <div class="icon"><i class="bi bi-phone"></i></div>
+                            <div class="feature-content">
+                                <h5>Mobile App Development</h5>
+                                <p>Android Developer with 5+ years of experience specializing in Kotlin, Jetpack
+                                    Compose, and Kotlin Multiplatform (KMP), building native and cross-platform apps
+                                    with modern MVVM architecture.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feature-box-01">
+                            <div class="icon"><i class="bi bi-globe"></i></div>
+                            <div class="feature-content">
+                                <h5>Web App Development</h5>
+                                <p>Experience with React, Node.js, and MySQL for building and maintaining full-stack web
+                                    applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services -->
+        <!-- portfolio -->
+        <section id="portfolio" data-scroll-index="3" class="section portfolio-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h3>
+                        <span>My Portfolio</span>
+                    </h3>
+                </div>
+                <div class="lightbox-gallery">
+                    <div class="row g-3 g-lg-4 portfolio-content">
+                        <div class="col-sm-6 col-lg-4 grid-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-text">
+                                    <h6>LocalBuds: Service Finding</h6>
+                                    <p>Web application</p>
+                                    <a class="gallery-link" data-bs-target="#project_1_image" role="button"
+                                        data-bs-toggle="modal">
+                                        <i class="bi-arrow-up-right-circle"></i>
+                                    </a>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="assets/localbuds/icon_transparent.png" title="" alt="">
+                                    <a class="app_modal portfolio-modal-link" href="#project_1">
+                                        <i class="bi bi-plus-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 grid-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-text">
+                                    <h6>Pig Master</h6>
+                                    <p>Mobile App</p>
+                                    <a class="gallery-link" data-bs-target="#project_2_image" role="button"
+                                        data-bs-toggle="modal">
+                                        <i class="bi-arrow-up-right-circle"></i>
+                                    </a>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="assets/pigmaster/logo.png" title="" alt="">
+                                    <a class="app_modal portfolio-modal-link" href="#project_2">
+                                        <i class="bi bi-plus-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 grid-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-text">
+                                    <h6>Expense Tracker</h6>
+                                    <p>Mobile App</p>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="assets/expensetracker/icon.png" title="" alt="">
+                                    <a class="app_modal portfolio-modal-link" href="#project_3">
+                                        <i class="bi bi-plus-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End portfolio -->
+        <section id="certifications" data-scroll-index="4" class="section portfolio-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h3>
+                        <span>Certifications</span>
+                    </h3>
+                </div>
+                <div class="lightbox-gallery">
+                    <div class="row g-3 g-lg-4 portfolio-content">
+                        <div class="col-sm-6 col-lg-4 grid-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-text">
+                                    <h6>Google Play Academy</h6>
+                                    <p>Store listing certificate</p>
+                                    <a class="gallery-link"
+                                        href="https://www.credential.net/415c9f11-902a-4cc4-a6d1-f984c05bda8f"
+                                        target="_blank" role="button">
+                                        <i class="bi-arrow-up-right-circle"></i>
+                                    </a>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="assets/certificates/listing_badge.png" title="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 grid-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-text">
+                                    <h6>Udemy</h6>
+                                    <p>iOS & Swift - The Complete iOS App Development Bootcamp</p>
+                                    <a class="gallery-link"
+                                        href="https://www.udemy.com/certificate/UC-db1dd78b-5f21-4f97-9f33-4eb3011ccdb8/"
+                                        target="_blank" role="button">
+                                        <i class="bi-arrow-up-right-circle"></i>
+                                    </a>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="assets/certificates/udemy_ios_course_badge.png" title="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="project_1" class="px-modal mfp-hide">
+        <div class="single-project-box">
+            <div class="row align-items-start">
+                <div class="col-lg-7">
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <img class="border" src="assets/localbuds/home.png" title="Home screen" alt="home screen"
+                                width="100%">
+                        </div>
+                        <div class="col-12">
+                            <img class="border" src="assets/localbuds/my_profile.png" title="Home screen"
+                                alt="home screen" width="100%">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-5 pt-4 pt-lg-0">
+                    <h4>Academic project for graduate level course</h4>
+                    <p class="mb-3">LocalBuds: Service finding provides a platform to every individual who can do a
+                        certain service and would like to share it with other people or just someone who is seeking help
+                        to do local work like, Heating and Cooling Service, lawn cutting and many more.​</p>
+                    <p>With the help of LocalBuds, one should not have to search multiple sources or visit multiple
+                        websites to find a provider. We will provide a one stop shop for freelance hiring.</p>
+                    <div class="about-content">
+                        <ul>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Type:</span>
+                                <span>Web Application</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Languages:</span>
+                                <span>JS, Node.JS, AJAX, JQuery</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Database:</span>
+                                <span>MongoDB</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Libraries</span>
+                                <span>Express, Handlebars, Bootstrap, Express-session, Bcrypt</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project_2" class="px-modal mfp-hide">
+        <div class="single-project-box">
+            <div class="row align-items-start">
+                <div class="col-lg-7">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <img class="border" src="assets/pigmaster/home.png" title="" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="border" src="assets/pigmaster/events.png" title="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 pt-4 pt-lg-0">
+                    <h4>Native Android app for a mobile gaming community</h4>
+                    <p class="mb-3">Pig Master is a native Android app I engineered and independently launched to the
+                        Google Play Store, reaching 2,000+ active users within the first 3 months of release. It served
+                        as a companion and social platform for players of a popular mobile game, letting users connect,
+                        share strategies, and help each other through difficult levels.
+                        Built the data layer using asynchronous REST API calls with Kotlin Coroutines, with state
+                        managed via LiveData for a responsive experience. Added social features including chat rooms,
+                        post sharing with likes and comments, and a content moderation system for reporting
+                        inappropriate posts and messages.</p>
+                    <div class="about-content">
+                        <ul>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Type:</span>
+                                <span>Mobile App</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Languages:</span>
+                                <span>Kotlin</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Platform:</span>
+                                <span>Android</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Backend:</span>
+                                <span>PHP, MySQL</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Libraries:</span>
+                                <span>Coroutines, Work manager, Retrofit, Material Design, Firebase auth, Audience
+                                    Network ads, Unity ads</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project_3" class="px-modal mfp-hide">
+        <div class="single-project-box">
+            <div class="row align-items-start">
+                <div class="col-lg-7">
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <img class="border" src="assets/expensetracker/icon.png" title="" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 pt-4 pt-lg-0">
+                    <h4>Cross-platform expense tracking app</h4>
+                    <p class="mb-3">A personal finance app for tracking expenses, budgets, and recurring costs,
+                        currently in development.</p>
+                    <p>Built with Kotlin Multiplatform (KMP) to share core business logic between iOS and Android, while
+                        keeping fully native UI on each platform — Jetpack Compose on Android, SwiftUI on iOS. Includes
+                        spending insights and charts on top of the shared logic.</p>
+                    <div class="about-content">
+                        <ul>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Type:</span>
+                                <span>Mobile App (Cross-platform)</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Languages:</span>
+                                <span>Kotlin, Swift</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Platform:</span>
+                                <span>Android, iOS</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="col-4 col-lg-3">Libraries:</span>
+                                <span>Kotlin Multiplatform, Jetpack Compose, SwiftUI, Ktor, Koin</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="contactus" data-scroll-index="5">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer-avatar">
+                    <img src="assets/cropped.JPG" title="" alt="">
+                </div>
+                <h6>Parth Paghdal</h6>
+            </div>
+            <ul class="nav social-link">
+                <li>
+                    <a href="tel:+1 609-934-6514" target="_blank"><i class="bi bi-phone-fill"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/parth-paghadal-608b83134/" target="_blank"><i
+                            class="bi bi-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:parthpaghadal123@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                </li>
+            </ul>
+            <p class="copyright">Made by Parth B. Paghdal</p>
+        </div>
+    </footer>
+
+
+    <div id="project_1_image" class="modal fade" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="project1Dark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#project1Dark" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
                                 <img src="./assets/localbuds/home.png" class="d-block w-100" alt="Home page">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h5>Home page</h5>
+                                    <h5>Home page</h5>
                                 </div>
-                              </div>
-                              <div class="carousel-item">
+                            </div>
+                            <div class="carousel-item">
                                 <img src="./assets/localbuds/add_service.png" class="d-block w-100" alt="Add Service 1">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h5>Add Service 1</h5>
+                                    <h5>Add Service 1</h5>
                                 </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./assets/localbuds/add_service_2.png" class="d-block w-100" alt="Add Service 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/localbuds/add_service_2.png" class="d-block w-100"
+                                    alt="Add Service 2">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h5>Add Service 2</h5>
+                                    <h5>Add Service 2</h5>
                                 </div>
-                              </div>
-                              <div class="carousel-item">
+                            </div>
+                            <div class="carousel-item">
                                 <img src="./assets/localbuds/service.png" class="d-block w-100" alt="Service">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h5>Service</h5>
+                                    <h5>Service</h5>
                                 </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./assets/localbuds/update_service.png" class="d-block w-100" alt="Update service">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/localbuds/update_service.png" class="d-block w-100"
+                                    alt="Update service">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h5>Update service</h5>
+                                    <h5>Update service</h5>
                                 </div>
-                              </div>
-                              <div class="carousel-item">
+                            </div>
+                            <div class="carousel-item">
                                 <img src="./assets/localbuds/home_2.png" class="d-block w-100" alt="Home 2">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h5>Home 2</h5>
+                                    <h5>Home 2</h5>
                                 </div>
-                              </div>
-                              <div class="carousel-item">
+                            </div>
+                            <div class="carousel-item">
                                 <img src="./assets/localbuds/search.png" class="d-block w-100" alt="Search">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h5>Search</h5>
+                                    <h5>Search</h5>
                                 </div>
-                              </div>
-                              <div class="carousel-item">
+                            </div>
+                            <div class="carousel-item">
                                 <img src="./assets/localbuds/my_profile.png" class="d-block w-100" alt="My Profile">
                                 <div class="carousel-caption d-none d-md-block">
-                                  <h5>My Profile</h5>
+                                    <h5>My Profile</h5>
                                 </div>
-                              </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#project1Dark" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#project1Dark" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project1Dark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project1Dark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div id="project_2_image" class="modal fade" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-4"></div>
-                                <div class="col-md-4 ms-auto">
-                                    <div id="project2Dark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                                        <div class="carousel-indicators" style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">
-                                            <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                            <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                            <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                                        </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="./assets/pigmaster/landing.png" class="d-block" alt="Landing screen">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                    <h5 style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">Landing screen</h5>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./assets/pigmaster/home.png" class="d-block" alt="Home screen 1">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                <h5 style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">Home screen 1</h5>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./assets/pigmaster/home_dark.png" class="d-block" alt="Home screen 2">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                <h5 style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">Home screen 2</h5>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./assets/pigmaster/events.png" class="d-block" alt="Events">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                <h5 style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">Events</h5>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./assets/pigmaster/setting.png" class="d-block" alt="setting 1">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                <h5 style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">Setting 1</h5>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./assets/pigmaster/setting_dark.png" class="d-block" alt="setting 2">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                <h5 style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">Setting 2</h5>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./assets/pigmaster/login_need.png" class="d-block" alt="Login need">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                    <h5 style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">Need login</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#project2Dark" data-bs-slide="prev">
-                                            <div style="background: radial-gradient(#ffffffa3, #ffffff5e);border-radius: 10px;">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </div>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#project2Dark" data-bs-slide="next">
-                                            <div style="background: radial-gradient(#ffffffa3, #ffffff5e);border-radius: 10px;">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </div>
-                                        </button>
+    <div id="project_2_image" class="modal fade" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4 ms-auto">
+                                <div id="project2Dark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators"
+                                        style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">
+                                        <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="4"
+                                            aria-label="Slide 5"></button>
+                                        <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="5"
+                                            aria-label="Slide 6"></button>
+                                        <button type="button" data-bs-target="#project2Dark" data-bs-slide-to="6"
+                                            aria-label="Slide 7"></button>
                                     </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./assets/pigmaster/landing.png" class="d-block"
+                                                alt="Landing screen">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5
+                                                    style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">
+                                                    Landing screen</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/pigmaster/home.png" class="d-block" alt="Home screen 1">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5
+                                                    style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">
+                                                    Home screen 1</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/pigmaster/home_dark.png" class="d-block"
+                                                alt="Home screen 2">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5
+                                                    style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">
+                                                    Home screen 2</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/pigmaster/events.png" class="d-block" alt="Events">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5
+                                                    style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">
+                                                    Events</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/pigmaster/setting.png" class="d-block" alt="setting 1">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5
+                                                    style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">
+                                                    Setting 1</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/pigmaster/setting_dark.png" class="d-block"
+                                                alt="setting 2">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5
+                                                    style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">
+                                                    Setting 2</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/pigmaster/login_need.png" class="d-block"
+                                                alt="Login need">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5
+                                                    style="background: radial-gradient(#ffffff83, #ffffff00);border-radius: 5px;">
+                                                    Need login</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#project2Dark"
+                                        data-bs-slide="prev">
+                                        <div
+                                            style="background: radial-gradient(#ffffffa3, #ffffff5e);border-radius: 10px;">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </div>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#project2Dark"
+                                        data-bs-slide="next">
+                                        <div
+                                            style="background: radial-gradient(#ffffffa3, #ffffff5e);border-radius: 10px;">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </div>
+                                    </button>
                                 </div>
-                                <div class="col-md-4"></div>
                             </div>
+                            <div class="col-md-4"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div id="education_1" class="px-modal mfp-hide">
-            <div class="single-project-box">
-                <div class="row align-items-start">
-                    <div class="col-lg-12">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-md-6">
-                                <img src="assets/school/stevens.png" class="img-fluid mx-auto d-block">
-                              </div>
+    <div id="education_1" class="px-modal mfp-hide">
+        <div class="single-project-box">
+            <div class="row align-items-start">
+                <div class="col-lg-12">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-6">
+                            <img src="assets/school/stevens.png" class="img-fluid mx-auto d-block">
                         </div>
                     </div>
-                    <div class="col-lg-12 pt-4 pt-lg-0 mt-3">
-                        <h4>Stevens Institute of Technology</h4>
-                        <p class="mb-3">As a student of computer science at Stevens Institute of Technology in Hoboken, NJ, I have been privileged to receive a top-tier education that has equipped me with the knowledge and skills necessary to excel in my future career. Throughout my time at Stevens, I have been consistently impressed by the dedication and expertise of the faculty, who have challenged and inspired me to reach my full potential.</p>
-                        <p class="mb-3">I am proud to announce that I have been awarded a $6,000 scholarship and course assistantship for a graduate-level course at Stevens Institute of Technology. This achievement is a testament to my dedication to academic excellence and my passion for computer science.</p>
-                        <div class="about-content">
-                            <ul>
-                                <li class="d-block">
-                                    <span class="col-4 col-lg-3">Honors:</span>
-                                    <span class="d-block">&#x2022; $6000 scholarship for graduate studies</span>
-                                    <span class="d-block">&#x2022; Course Assistantship for graduate level course CS-522</span>
-                                </li>
-                                <li class="d-block">
-                                    <span class="col-4 col-lg-3">Coursework:</span>
-                                    <span class="d-block">&#x2022; CS-532 3D Computer Vision</span>
-                                    <span class="d-block">&#x2022; CS-546 Web Programming</span>
-                                    <span class="d-block">&#x2022; CS-522 Mobile Systems and Applications</span>
-                                    <span class="d-block">&#x2022; CS 554 Web Programming II</span>
-                                    <span class="d-block">&#x2022; CS-555 Agile Methods for Software Development</span>
-                                    <span class="d-block">&#x2022; CS-545 Human-Computer Interaction</span>
-                                    <span class="d-block">&#x2022; CS-501 Introduction to JAVA Programming</span>
-                                    <span class="d-block">&#x2022; CS-550 Comp Organization & Prog</span>
-                                    <span class="d-block">&#x2022; CS-570 Intro to Programming, Data Structures & Algo.</span>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-12 pt-4 pt-lg-0 mt-3">
+                    <h4>Stevens Institute of Technology</h4>
+                    <p class="mb-3">As a student of computer science at Stevens Institute of Technology in Hoboken, NJ,
+                        I have been privileged to receive a top-tier education that has equipped me with the knowledge
+                        and skills necessary to excel in my future career. Throughout my time at Stevens, I have been
+                        consistently impressed by the dedication and expertise of the faculty, who have challenged and
+                        inspired me to reach my full potential.</p>
+                    <p class="mb-3">I am proud to announce that I have been awarded a $6,000 scholarship and course
+                        assistantship for a graduate-level course at Stevens Institute of Technology. This achievement
+                        is a testament to my dedication to academic excellence and my passion for computer science.</p>
+                    <div class="about-content">
+                        <ul>
+                            <li class="d-block">
+                                <span class="col-4 col-lg-3">Honors:</span>
+                                <span class="d-block">&#x2022; $6000 scholarship for graduate studies</span>
+                                <span class="d-block">&#x2022; Course Assistantship for graduate level course
+                                    CS-522</span>
+                            </li>
+                            <li class="d-block">
+                                <span class="col-4 col-lg-3">Coursework:</span>
+                                <span class="d-block">&#x2022; CS-532 3D Computer Vision</span>
+                                <span class="d-block">&#x2022; CS-546 Web Programming</span>
+                                <span class="d-block">&#x2022; CS-522 Mobile Systems and Applications</span>
+                                <span class="d-block">&#x2022; CS 554 Web Programming II</span>
+                                <span class="d-block">&#x2022; CS-555 Agile Methods for Software Development</span>
+                                <span class="d-block">&#x2022; CS-545 Human-Computer Interaction</span>
+                                <span class="d-block">&#x2022; CS-501 Introduction to JAVA Programming</span>
+                                <span class="d-block">&#x2022; CS-550 Comp Organization & Prog</span>
+                                <span class="d-block">&#x2022; CS-570 Intro to Programming, Data Structures &
+                                    Algo.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script src="./js/jquery-3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 
-        <script src="./third-party/one-page/scrollIt.min.js"></script>
-        <script src="./third-party/appear/jquery.appear.js"></script>
-        <script src="./assets/custom.js"></script>
-        <script src="./assets/darkmode.js"></script>
-    </body>
+    <script src="./third-party/one-page/scrollIt.min.js"></script>
+    <script src="./third-party/appear/jquery.appear.js"></script>
+    <script src="./assets/custom.js"></script>
+    <script src="./assets/darkmode.js"></script>
+</body>
+
 </html>
